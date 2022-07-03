@@ -1,0 +1,554 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.progressbar {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 5%;
+  right: 5%;
+  width: 70%;
+}
+
+.progressbar p {
+  font-size: 10px;
+  width: 15%;
+  text-align: right;
+}
+
+.progressbar .progression {
+  width: 80%;
+  border-radius: 20px;
+  height: 10px;
+  -webkit-box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.progressbar .progression1 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, green), color-stop(0%, white));
+  background: linear-gradient(to right, green 30%, white 0%);
+}
+
+.progressbar .progression2 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, green), color-stop(0%, white));
+  background: linear-gradient(to right, green 20%, white 0%);
+}
+
+.progressbar .progression3 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, green), color-stop(0%, white));
+  background: linear-gradient(to right, green 10%, white 0%);
+}
+
+.progressbar .progression4 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, green), color-stop(0%, white));
+  background: linear-gradient(to right, green 30%, white 0%);
+}
+
+.progressbar .progression5 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, green), color-stop(0%, white));
+  background: linear-gradient(to right, green 30%, white 0%);
+}
+
+.progressbar .progression6 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, green), color-stop(0%, white));
+  background: linear-gradient(to right, green 30%, white 0%);
+}
+
+.card-img-top {
+  height: 20vh;
+}
+
+body {
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+body header {
+  background: #c08888;
+  position: fixed;
+  height: 70px;
+  margin-bottom: 70px;
+  padding: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: solid 1px black;
+}
+
+body header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
+}
+
+body header nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+body main {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body main .first {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+body main .first .welcomeh1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #00F0FF;
+  font-size: 50px;
+  text-shadow: 0 0 67px #00F0FF;
+}
+
+body main .first .button {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body main .second {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+
+body main .second .wrapper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+body main .second .wrapper .aboutmeTxt {
+  max-width: 80%;
+  min-height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body main .second .wrapper .aboutmeTxt p {
+  padding-bottom: 30px;
+}
+
+body main .third {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+body main .third .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+body main .third .projects .card1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: c1;
+}
+
+body main .third .projects .card2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: c2;
+}
+
+body main .third .projects .card3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: c3;
+}
+
+body main .third .projects .card4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: c4;
+}
+
+body main .third .projects .card5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: c5;
+}
+
+body main .third .projects .card6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: c6;
+}
+
+body main .third .projects .grid-thing {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 72%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'c1 c2 c3' 'c4 c5 c6';
+  grid-gap: 30px;
+}
+
+body main .third .projects .grid-thing .imginsidecard {
+  height: 10vw;
+}
+
+body main .third .projects .grid-thing .imginsidecard .icon {
+  width: 10%;
+  position: absolute;
+  top: 40%;
+  left: 3%;
+}
+
+body main .fourth {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+body main .fourth .skills {
+  padding-top: 50px;
+  width: auto;
+}
+
+body main .fourth .skills .html {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 30px;
+}
+
+body main .fourth .skills .html .skill {
+  width: 70%;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #e34c26;
+  padding: 2px 10px 2px 0px;
+}
+
+body main .fourth .skills .html .skill .percent {
+  color: white;
+  text-align: right;
+}
+
+body main .fourth .skills .html .language {
+  width: 20%;
+  color: white;
+  text-align: right;
+}
+
+body main .fourth .skills .css {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 30px;
+}
+
+body main .fourth .skills .css .skill {
+  width: 65%;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #563d7c;
+  padding: 2px 10px 2px 0px;
+}
+
+body main .fourth .skills .css .skill .percent {
+  color: white;
+  text-align: right;
+}
+
+body main .fourth .skills .css .language {
+  width: 20%;
+  color: white;
+  text-align: right;
+}
+
+body main .fourth .skills .js {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 30px;
+}
+
+body main .fourth .skills .js .skill {
+  width: 60%;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #f1e05a;
+  padding: 2px 10px 2px 0px;
+}
+
+body main .fourth .skills .js .skill .percent {
+  color: white;
+  text-align: right;
+}
+
+body main .fourth .skills .js .language {
+  width: 20%;
+  color: white;
+  text-align: right;
+}
+
+body main .fourth .skills .tailwind {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 30px;
+}
+
+body main .fourth .skills .tailwind .skill {
+  width: 55%;
+  height: 30px;
+  border-radius: 20px;
+  background-color: lightblue;
+  padding: 2px 10px 2px 0px;
+}
+
+body main .fourth .skills .tailwind .skill .percent {
+  color: white;
+  text-align: right;
+}
+
+body main .fourth .skills .tailwind .language {
+  width: 20%;
+  color: white;
+  text-align: right;
+}
+
+body main .fourth .skills .bootstrap {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 30px;
+}
+
+body main .fourth .skills .bootstrap .skill {
+  width: 50%;
+  height: 30px;
+  border-radius: 20px;
+  background-color: brown;
+  padding: 2px 10px 2px 0px;
+}
+
+body main .fourth .skills .bootstrap .skill .percent {
+  color: white;
+  text-align: right;
+}
+
+body main .fourth .skills .bootstrap .language {
+  width: 20%;
+  color: white;
+  text-align: right;
+}
+
+body main .fourth .skills .django {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 30px;
+}
+
+body main .fourth .skills .django .skill {
+  width: 30%;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #3572A5;
+  padding: 2px 10px 2px 0px;
+}
+
+body main .fourth .skills .django .skill .percent {
+  color: white;
+  text-align: right;
+}
+
+body main .fourth .skills .django .language {
+  width: 20%;
+  color: white;
+  text-align: right;
+}
+
+body main .fourth .skills .flutter {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 30px;
+}
+
+body main .fourth .skills .flutter .skill {
+  width: 30%;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #A97BFF;
+  padding: 2px 10px 2px 0px;
+}
+
+body main .fourth .skills .flutter .skill .percent {
+  color: white;
+  text-align: right;
+}
+
+body main .fourth .skills .flutter .language {
+  width: 20%;
+  color: white;
+  text-align: right;
+}
+
+body main .fourth .skills .swift {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 30px;
+}
+
+body main .fourth .skills .swift .skill {
+  width: 20%;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #F05138;
+  padding: 2px 10px 2px 0px;
+}
+
+body main .fourth .skills .swift .skill .percent {
+  color: white;
+  text-align: right;
+}
+
+body main .fourth .skills .swift .language {
+  width: 20%;
+  color: white;
+  text-align: right;
+}
+
+body main .fourth .skills .php {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 30px;
+}
+
+body main .fourth .skills .php .skill {
+  width: 15%;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #4F5D95;
+  padding: 2px 10px 2px 0px;
+}
+
+body main .fourth .skills .php .skill .percent {
+  color: white;
+  text-align: right;
+}
+
+body main .fourth .skills .php .language {
+  width: 20%;
+  color: white;
+  text-align: right;
+}
+
+@-webkit-keyframes welcomeFadeIn {
+  0% {
+    left: 40%;
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    left: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes welcomeFadeIn {
+  0% {
+    left: 40%;
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    left: 50%;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=index.css.map */
