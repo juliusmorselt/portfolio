@@ -39,13 +39,13 @@
 }
 
 .progressbar .progression2 {
-  background: -webkit-gradient(linear, left top, right top, color-stop(20%, green), color-stop(0%, white));
-  background: linear-gradient(to right, green 20%, white 0%);
+  background: -webkit-gradient(linear, left top, right top, from(green), color-stop(0%, white));
+  background: linear-gradient(to right, green 0%, white 0%);
 }
 
 .progressbar .progression3 {
-  background: -webkit-gradient(linear, left top, right top, color-stop(10%, green), color-stop(0%, white));
-  background: linear-gradient(to right, green 10%, white 0%);
+  background: -webkit-gradient(linear, left top, right top, from(green), color-stop(0%, white));
+  background: linear-gradient(to right, green 0%, white 0%);
 }
 
 .progressbar .progression4 {
@@ -178,6 +178,8 @@ body main .third .projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: auto;
+  width: auto;
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%);
@@ -221,11 +223,12 @@ body main .third .projects .card6 {
 }
 
 body main .third .projects .grid-thing {
-  position: absolute;
+  position: relative;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  width: 72%;
+  top: 10%;
+  -webkit-transform: translate(-50%, 10%);
+          transform: translate(-50%, 10%);
+  width: 72vw;
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'c1 c2 c3' 'c4 c5 c6';
@@ -522,6 +525,16 @@ body main .fourth .skills .php .language {
   width: 20%;
   color: white;
   text-align: right;
+}
+
+body footer {
+  height: 50px;
+  padding: 10px;
+}
+
+body footer a {
+  text-decoration: none;
+  float: right;
 }
 
 @-webkit-keyframes welcomeFadeIn {

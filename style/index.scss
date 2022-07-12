@@ -28,8 +28,8 @@ $welcomecolor: #00F0FF;
         box-shadow: inset 1px 1px 10px rgba($color: #000000, $alpha: 0.2);
     }
     .progression1 { background: linear-gradient(to right, green 30%, white 0%); }
-    .progression2 { background: linear-gradient(to right, green 20%, white 0%); }
-    .progression3 { background: linear-gradient(to right, green 10%, white 0%); }
+    .progression2 { background: linear-gradient(to right, green 0%, white 0%); }
+    .progression3 { background: linear-gradient(to right, green 0%, white 0%); }
     .progression4 { background: linear-gradient(to right, green 30%, white 0%); }
     .progression5 { background: linear-gradient(to right, green 30%, white 0%); }
     .progression6 { background: linear-gradient(to right, green 30%, white 0%); }
@@ -38,6 +38,7 @@ $welcomecolor: #00F0FF;
 .card-img-top {
     height: 20vh;
 }
+
 
 body {
     background-color: $bodybgcolor;
@@ -117,6 +118,8 @@ body {
             height: 100vh;
             .projects {
                 display: flex;
+                height: auto;
+                width: auto;
                 position: absolute;
                 left: 50%;
                 transform: translate(-50%);
@@ -127,10 +130,11 @@ body {
                 .card5 { grid-area: c5; }
                 .card6 { grid-area: c6; }
                 .grid-thing {
-                    position: absolute;
+                    position: relative;
                     left: 50%;
-                    transform: translate(-50%);
-                    width: 72%;
+                    top: 10%;
+                    transform: translate(-50%, 10%);
+                    width: 72vw;
                     display: grid;
                     grid-template-areas: 
                         'c1 c2 c3'
@@ -364,6 +368,14 @@ body {
                     }
                 }
             }
+        }
+    }
+    footer {
+        height: 50px;
+        padding: 10px;
+        a {
+            text-decoration: none;
+            float: right;
         }
     }
 }
