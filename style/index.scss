@@ -150,6 +150,14 @@ body {
                         }
                     }
                 }
+                
+                h4 {
+                    color: white;
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%);
+                    margin-top: 50px;
+                }
             }
         }
 

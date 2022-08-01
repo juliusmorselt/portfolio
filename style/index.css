@@ -246,6 +246,15 @@ body main .third .projects .grid-thing .imginsidecard .icon {
   left: 3%;
 }
 
+body main .third .projects h4 {
+  color: white;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  margin-top: 50px;
+}
+
 body main .fourth {
   position: relative;
   width: 100vw;
