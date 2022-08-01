@@ -27,8 +27,8 @@ $welcomecolor: #00F0FF;
         height: 10px;
         box-shadow: inset 1px 1px 10px rgba($color: #000000, $alpha: 0.2);
     }
-    .progression1 { background: linear-gradient(to right, green 30%, white 0%); }
-    .progression2 { background: linear-gradient(to right, green 0%, white 0%); }
+    .progression1 { background: linear-gradient(to right, green 70%, white 0%); }
+    .progression2 { background: linear-gradient(to right, green 10%, white 0%); }
     .progression3 { background: linear-gradient(to right, green 0%, white 0%); }
     .progression4 { background: linear-gradient(to right, green 30%, white 0%); }
     .progression5 { background: linear-gradient(to right, green 30%, white 0%); }
@@ -115,7 +115,7 @@ body {
         .third {
             position: relative;
             width: 100vw;
-            height: 100vh;
+            height: 200vh;
             .projects {
                 display: flex;
                 height: auto;
@@ -129,7 +129,7 @@ body {
                 .card4 { grid-area: c4; }
                 .card5 { grid-area: c5; }
                 .card6 { grid-area: c6; }
-                .grid-thing {
+                .grid-thing{
                     position: relative;
                     left: 50%;
                     top: 10%;

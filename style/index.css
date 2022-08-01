@@ -34,13 +34,13 @@
 }
 
 .progressbar .progression1 {
-  background: -webkit-gradient(linear, left top, right top, color-stop(30%, green), color-stop(0%, white));
-  background: linear-gradient(to right, green 30%, white 0%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(70%, green), color-stop(0%, white));
+  background: linear-gradient(to right, green 70%, white 0%);
 }
 
 .progressbar .progression2 {
-  background: -webkit-gradient(linear, left top, right top, from(green), color-stop(0%, white));
-  background: linear-gradient(to right, green 0%, white 0%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, green), color-stop(0%, white));
+  background: linear-gradient(to right, green 10%, white 0%);
 }
 
 .progressbar .progression3 {
@@ -171,7 +171,7 @@ body main .second .wrapper .aboutmeTxt p {
 body main .third {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
 }
 
 body main .third .projects {
